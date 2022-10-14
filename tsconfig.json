@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "sourceMap": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@models/*": ["models/*"],
+      "@routes/*": ["routes/*"],
+      "@controllers": ["controllers"],
+      "@controllers/*": ["controllers/*"],
+      "@services": ["services"],
+      "@services/*": ["services/*"],
+      "@repositories": ["repositories"],
+      "@repositories/*": ["repositories/*"],
+      "@databases": ["databases"],
+      "@databases/*": ["databases/*"],
+      "@middlewares": ["middlewares"],
+      "@middlewares/*": ["middlewares/*"],
+      "@dtos": ["dtos"],
+      "@dtos/*": ["dtos/*"],
+      "@config": ["config"],
+      "@config/*": ["config/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"],
+      "@entity": ["entity"],
+      "@entity/*": ["entity/*"],
+      "@exceptions/*": ["exceptions/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.json", ".env"],
+  "exclude": ["node_modules"]
+}
